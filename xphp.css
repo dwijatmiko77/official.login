@@ -1,0 +1,15 @@
+body
+
+h2 {
+	font-weight:bolder;
+	text-align : center;
+}
+
+tr td {
+	padding    : 10px;
+	font-weight: 900;
+}
+
+u {
+	font-weight: 900;
+}
