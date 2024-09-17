@@ -12,7 +12,7 @@ include "koneksi.php";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../data_pengunjung/media/logo DPM.png">
   <!--  -->
-  <link rel="stylesheet" href="xphp.css">
+  <link rel="stylesheet" href="xlogin.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- Font Google -->
@@ -52,15 +52,15 @@ include "koneksi.php";
       <div>
         <div class="body-form">
           <label for="username" type="text" class="form-label">Username :</label>
-          <input type="text" name="username" id="username" class="form-control">
+          <input type="text" name="username" id="username" required class="form-control">
         </div>
         <div class="body-form">
           <label for="" type="text" class="form-label">Password :</label>
-          <input type="password" name="password" id="password" class="form-control">
+          <input type="password" name="password" id="password" required class="form-control">
         </div>
         <div class="button">
-          <button type="submit" class="btn btn-success">Login</button>
-          <a href="register.php" class="req">Registrasi</a>
+          <button type="submit" class="btn login btn-success">Login</button>
+          <a href="register.php" class="reg">Registrasi</a>
         </div>
       </div>
     </form>
