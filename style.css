@@ -294,16 +294,16 @@ h2.user {
 }
 
 .home .home-content h3 {
-  /* padding-left: 25px; */
-  padding: 0;
+  padding-left: 25px;
+  padding     : 0;
 }
 
 .home .home-content p {
-  margin-left          : 2px;
-  /* padding-left      : 23px; */
-  animation-duration   : 2500ms;
-  animation-delay      : 1500ms;
-  margin-right         : 30px;
+  margin-left       : 2px;
+  padding-left      : 23px;
+  animation-duration: 2500ms;
+  animation-delay   : 1500ms;
+  margin-right      : 30px;
 }
 
 
@@ -472,20 +472,17 @@ a i.git {
 }
 
 /* ========================================== */
-@media screen and (max-width :800px) {
+/* @media screen and (max-width :800px) {
   p.animate__animated {
     margin-left: 30px;
   }
-}
+} */
 
 @media screen and (min-width :800px) {
-  p.animate__animated {
+  /* p.animate__animated {
     margin-right: 30px;
-  }
+  } */
 
-}
-
-@media screen and (min-width :800px) {
   section {
     height: 100%;
   }

@@ -10,7 +10,7 @@ include "koneksi.php";
   <meta charset="utf-8">
   <title>Registration</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="media/Komisi 2 news miko.png">
+  <link rel="icon" href="../data_pengunjung/media/logo DPM.png">
   <!--  -->
   <link rel="stylesheet" href="xphp.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,23 +18,17 @@ include "koneksi.php";
 </head>
 
 <body>
-  <!-- <nav>
-    <button><a href="login.php">Login</a></button>
-    <button><a href="register.php">Register</a></button>
-  </nav> -->
-
-  <hr>
-  <h2 style="text-align:center">SIGN UP PAGE USER</h2>
+  <!-- ============PHP SCRIPT============== -->
   <?php
   if (isset($_POST["username"])) {
     $nama = $_POST['nama'];
     $username = $_POST['username'];
+    $email = $_POST['email'];
     $password = md5($_POST['password']);
-    $time = $_POST['time'];
-
-    $query = mysqli_query($koneksi, "INSERT INTO user(nama,username,password,time) values('$nama','$username','$password','$time')");
+    
+    $query = mysqli_query($koneksi, "INSERT INTO user(nama,username,email,password) values('$nama','$username','$email','$password')");
     if ($query) {
-      echo '<script>alert("Selamat Registrasi Berhasil. Silahkan Login")</script>';
+      echo '<script>alert("Registrasi Berhasil. Silahkan Login")</script>';
       header("location:index.php");
     } else {
       echo '<script>alert("Maaf Pendaftaran Gagal.")</script>';
@@ -42,41 +36,37 @@ include "koneksi.php";
     }
   }
   ?>
-  <form action="#" method="post">
-    <table align="center">
-      <tr>
-        <td colspan="3" align="center">
-          SIGN UP USER
-        </td>
-      </tr>
-      <tr>
-        <td>Nama</td>
-        <td><input type="text" name="nama"></td>
-      </tr>
-      <tr>
-        <td>Username</td>
-        <td><input type="text" name="username"></td>
-      </tr>
-      <tr>
-        <td>password</td>
-        <td><input type="password" name="password"></td>
-      </tr>
-      <tr>
-        <td>Time</td>
-        <td><input type="time-stamp" name="time"></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>
-          <button type="submit">Sign Up</button>
-          <i>Punya Akun? </i><a href="login.php">Login</a>
-        </td>
-      </tr>
-    </table>
+  <!-- ============PHP SCRIPT============== -->
+   <!-- ========== HTML START ============= -->
+   <section class="content">
+    <h2>SIGN UP PAGE</h2>
+    <form action="#" method="post" class="area">
+      <div>
+        <div class="body-form">
+          <label for="nama" type="text" class="form-label">Nama :</label>
+          <input type="text" name="nama" id="nama" class="form-control">
+        </div>
+        <div class="body-form">
+          <label for="username" type="text" class="form-label">Username :</label>
+          <input type="username" name="username" id="username" class="form-control">
+        </div>
+        <div class="body-form">
+          <label for="email" type="text" class="form-label">email :</label>
+          <input type="email" name="email" id="email" class="form-control">
+        </div>
+        <div class="body-form">
+          <label for="password" type="password" class="form-label">Password :</label>
+          <input type="password" name="password" id="password" class="form-control">
+        </div>
+        <div class="button">
+          <button type="submit" class="btn sign-up btn-success">Sign Up</button>
+          <i>Punya Akun? </i><a href="login.php" class="req">Login</a>
+        </div>
+      </div>
+    </form>
+  </section>
 
-  </form>
-
-  <?php include "layout/footer.html" ?>
+  <!-- <?php include "layout/footer.html" ?> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
