@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user'])) {
+  header('location:login.php');
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,10 +49,10 @@
         <h3>Dewan Perwakilan Mahasiswa</h3>
       </div>
       <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../visimisi/visimisi.html">Visi-Misi</a></li>
-        <li><a href="../about/about.html">About</a></li>
-        <li><a class="active" href="../contact/contact.html">Contact</a></li>
+        <li><a href="../index.php">Home</a></li>
+        <li><a href="../visimisi/visimisi.php">VisiMisi</a></li>
+        <li><a href="../about/about.php">About</a></li>
+        <li><a class="active" href="../contact/contact.php">Contact</a></li>
         <li><a href="../logout.php">Logout</a></li>
       </ul>
 

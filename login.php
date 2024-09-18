@@ -30,38 +30,37 @@ include "koneksi.php";
   if (isset($_POST['username'])) {
     $username = $_POST['username'];
     $password = md5($_POST['password']);
-    
-    $query = mysqli_query($koneksi, "SELECT*FROM user where username='$username' and password='$password'");
-    
+
+    $query = mysqli_query($koneksi, "SELECT*FROM user where username='$username' and password='
+        $password'");
+
     if (mysqli_num_rows($query) > 0) {
       $data = mysqli_fetch_array($query);
       $_SESSION['user'] = $data;
-      echo '<script>alert("Selamat Datang, ' . $data['nama'] . '"); location.href="index.php"</script>';
+      echo '<script>alert("Selamat Datang, ' . $data['nama'] . '");
+          location.href="index.php"</script>';
     } else {
-      
-    echo '<script>alert("Username/Password tidak sesuai.");</script>';
-  }
-}
-?> -->
 
+      echo '<script>alert("Username/Password tidak sesuai.");</script>';
+    }
+  }
+  ?> -->
   <!-- ================ PHP SCRIPT ================ -->
 
   <section class="content">
     <h2>LOGIN PAGE</h2>
-    <form action="#" method="post" class="area">
-      <div>
-        <div class="body-form">
-          <label for="username" type="text" class="form-label">Username :</label>
-          <input type="text" name="username" id="username" required class="form-control">
-        </div>
-        <div class="body-form">
-          <label for="" type="text" class="form-label">Password :</label>
-          <input type="password" name="password" id="password" required class="form-control">
-        </div>
-        <div class="button">
-          <button type="submit" class="btn login btn-success">Login</button>
-          <a href="register.php" class="reg">Registrasi</a>
-        </div>
+    <form method="post" class="area">
+      <div class="body-form">
+        <label class="form-label">Username :</label>
+        <input type="text" name="username" class="form-control">
+      </div>
+      <div class="body-form">
+        <label class="form-label">Password :</label>
+        <input type="password" name="password" class="form-control">
+      </div>
+      <div class="button">
+        <button type="submit" class="btn login btn-success">Login</button>
+        <a href="register.php" class="reg">Registrasi</a>
       </div>
     </form>
   </section>

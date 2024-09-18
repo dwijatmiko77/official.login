@@ -49,10 +49,10 @@ if (!isset($_SESSION['user'])) {
       <h3>Dewan Perwakilan Mahasiswa</h3>
     </div>
     <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="visimisi/visimisi.html">Visi-Misi</a></li>
-      <li><a href="about/about.html">About</a></li>
-      <li><a href="contact/contact.html">Contact</a></li>
+      <li><a class="active" href="index.php">Home</a></li>
+      <li><a href="visimisi/visimisi.php">VisiMisi</a></li>
+      <li><a href="about/about.php">About</a></li>
+      <li><a href="contact/contact.php">Contact</a></li>
       <li><a href="logout.php">Logout</a></li>
     </ul>
 
