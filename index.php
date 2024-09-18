@@ -53,6 +53,7 @@ if (!isset($_SESSION['user'])) {
       <li><a href="visimisi/visimisi.html">Visi-Misi</a></li>
       <li><a href="about/about.html">About</a></li>
       <li><a href="contact/contact.html">Contact</a></li>
+      <li><a href="logout.php">Logout</a></li>
     </ul>
 
     <div class="menu-toggle">

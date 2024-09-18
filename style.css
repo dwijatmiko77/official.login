@@ -80,18 +80,13 @@ nav ul {
 }
 
 nav ul li a {
-  cursor           : pointer;
-  text-decoration  : none;
-  color            : rgb(255, 255, 255);
-  font-size        : 12px;
-  letter-spacing   : 1px;
-  font-weight      : 700;
-  padding          : 3px;
-  transform        : rotate(5deg);
-  -webkit-transform: rotate(5deg);
-  -moz-transform   : rotate(5deg);
-  -ms-transform    : rotate(5deg);
-  -o-transform     : rotate(5deg);
+  cursor         : pointer;
+  text-decoration: none;
+  color          : rgb(255, 255, 255);
+  font-size      : 12px;
+  letter-spacing : 1px;
+  font-weight    : 700;
+  padding        : 3px;
 }
 
 nav ul li:hover {
@@ -100,14 +95,14 @@ nav ul li:hover {
 }
 
 nav ul li a:hover {
-  color                : rgb(0, 202, 185);
-  text-shadow          : 0 0 10px rgb(0, 255, 234);
-  text-decoration      : underline;
-  text-decoration-color: rgb(0, 202, 185);
-  padding              : 4px;
-  border-radius        : 3px;
-  text-underline-offset: 7px;
-  font-style           : italic;
+  color                   : rgb(0, 202, 185);
+  text-shadow             : 0 0 10px rgb(0, 255, 234);
+  text-decoration         : underline;
+  text-decoration-color   : rgb(0, 202, 185);
+  padding                 : 4px;
+  border-radius           : 3px;
+  text-underline-offset   : 7px;
+  font-style              : italic;
 }
 
 nav ul li a.active {
@@ -125,8 +120,13 @@ nav ul li a.active {
   transform            : translateY(-10px);
 }
 
-/* a.active:hover {
-  text-decoration-color: rgb(0, 202, 185);
+/* .nav-link .fa-solid {
+  color: #00c8ff;
+
+}
+
+.dropdown-menu {
+  color: #ffffff;
 } */
 
 nav ul li a::selection {
@@ -677,12 +677,12 @@ a.port {
 }
 
 a.port:hover {
-  transform       : translateY(-7px);
-  border-radius   : 3px;
-  padding-left    : 2px;
-  font-style      : italic;
-  color           : rgb(255, 255, 255);
-  text-shadow     : 0 0 10px rgb(255, 255, 255);
+  transform    : translateY(-7px);
+  border-radius: 3px;
+  padding-left : 2px;
+  font-style   : italic;
+  color        : rgb(255, 255, 255);
+  text-shadow  : 0 0 10px rgb(255, 255, 255);
 }
 
 
