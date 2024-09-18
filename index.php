@@ -1,8 +1,10 @@
 <?php
+// Inisisalisai SESSION
 session_start();
 
+// Pengecekan apakah ada user yang login, jika Tidak arahkan ke login.php
 if (!isset($_SESSION['user'])) {
-  header('location:login.php');
+  header(header: 'location:login.php');
 }
 ?>
 
@@ -64,9 +66,8 @@ if (!isset($_SESSION['user'])) {
     </div>
   </nav>
   <!-- nav end -->
-
-  <!-- CONTEN -------------------------------------------------------------->
-  <div class="background">
+   <!-- CONTEN -------------------------------------------------------------->
+   <div class="background">
     <center>
       <div class="section">
         <h1 class="animate__animated animate__fadeInUp">
@@ -314,6 +315,11 @@ if (!isset($_SESSION['user'])) {
       </div>
     </div>
   </div>
+  <!-- Messege Form -->
+  <!-- footer -->
+  <!-- -------------------------------------------------------------------------------------- -->
+
+
   <!-- Messege Form -->
   <!-- footer -->
   <!-- -------------------------------------------------------------------------------------- -->

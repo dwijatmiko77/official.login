@@ -3,107 +3,115 @@
 * {
 	padding       : 0;
 	margin        : 0;
-	color         : aliceblue;
+	color         : rgb(255, 255, 255);
 	font-family   : 'boogaloo', sans-serif;
 	letter-spacing: 1px;
-	font-size     : 1.2rem;
+	font-size     : 1.1rem;
 }
 
-@media screen and (min-width: 765px) {
+/* @media screen and (min-width: 765px) {
 	body {
 		background-size: 150px;
 	}
-}
+} */
 
 body {
 	background-image   : url(../data_pengunjung/media/uwhs.jpg);
 	background-size    : 200%;
 	background-position: center;
+	background-color   : rgba(0, 0, 0, 0.908);
 }
 
 h2 {
-	font-family    : 'carter one', 'boogaloo', sans-serif;
+	font-family    : 'boogaloo', sans-serif;
 	display        : flex;
 	justify-content: center;
 	font-weight    : 900;
-	padding-bottom : 3rem;
+	padding-bottom : 2rem;
+	letter-spacing : 2px;
 }
 
 section.content {
-	background-color: rgba(0, 0, 0, 0.813);
+	background-color: rgba(0, 0, 0, 0.838);
 	display         : flexbox;
 	justify-content : center;
 	align-content   : center;
 	max-height      : max-content;
-	height          : 44.8rem;
+	height          : 40rem;
 	position        : relative;
-}
-
-.area {
-	display        : flexbox;
-	justify-content: center;
 }
 
 form {
 	display        : grid;
-	flex-direction : column;
 	justify-content: center;
-}
-
-.body-form {
-	display       : flex;
-	justify-self  : center;
-	max-width     : max-content;
-	padding-bottom: 1rem;
-	margin-left   : 2rem;
-	margin-right  : 2rem;
+	justify-self   : center;
 }
 
 .form-label {
 	display        : grid;
-	justify-self   : center;
 	justify-content: start;
 	align-items    : end;
-	width          : 10rem;
-	padding-right  : 9px;
+	position       : relative;
+	bottom         : -5px;
 }
 
 .form-control {
 	font-family    : sans-serif;
 	display        : flexbox;
-	justify-content: flex-start;
-	width          : 100%;
-
+	justify-content: center;
+	margin-bottom  : 5px;
 }
 
 .button {
 	display        : flex;
-	justify-content: center;
-	justify-self   : center;
+	justify-content: start;
 	color          : rgb(255, 255, 255);
 }
 
+.btn {
+	position: relative;
+	top     : -10px;
+}
+
 .sign-up {
-	margin-top : 1rem;
+	margin-top: 1rem;
 }
 
 .login {
-	margin-top : 1rem;
+	margin-top: 1.5rem;
 }
 
-.reg {
-	margin-top           : 1.3rem;
+.register {
+	position             : relative;
+	top                  : 12px;
+	margin-top           : 11px;
 	margin-left          : 1rem;
-	color                : rgb(0, 208, 255);
-	text-decoration      : none;
+	color                : rgb(0, 197, 241);
+	text-decoration      : underline;
 	text-underline-offset: 7px;
+}
+
+.register:hover {
+	color: rgb(255, 255, 255);
 }
 
 i {
 	margin-top  : 1.3rem;
-	padding-left: 10px;
+	padding-left: 6px;
 	position    : relative;
 	right       : -9px;
+}
+
+.i {
+	color                : rgb(0, 197, 241);
+	margin-top           : 1.3rem;
+	margin-left          : 1rem;
+	text-decoration      : underline;
+	text-underline-offset: 7px;
+}
+
+.i:hover {
+	color :rgb(255, 255, 255)
 }
 
 /* ===========FOOTER============= */
@@ -131,6 +139,7 @@ i {
 }
 
 a.port {
+	font-size            : 13px;
 	font-family          : 'boogaloo', sans-serif;
 	text-decoration      : underline;
 	text-underline-offset: 5px;

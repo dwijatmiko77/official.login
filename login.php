@@ -25,45 +25,83 @@ include "koneksi.php";
 </head>
 
 <body>
-  <!-- ================ PHP SCRIPT ================ -->
-  <!-- <?php
+
+  <?php
   if (isset($_POST['username'])) {
     $username = $_POST['username'];
-    $password = md5($_POST['password']);
+    $password = md5(string: $_POST['password']);
 
-    $query = mysqli_query($koneksi, "SELECT*FROM user where username='$username' and password='
-        $password'");
+    $query = mysqli_query(mysql: $koneksi, query: "SELECT*FROM user where username='$username' and password='$password'");
 
-    if (mysqli_num_rows($query) > 0) {
-      $data = mysqli_fetch_array($query);
+    if (mysqli_num_rows(result: $query) > 0) {
+      $data = mysqli_fetch_array(result: $query);
       $_SESSION['user'] = $data;
-      echo '<script>alert("Selamat Datang, ' . $data['nama'] . '");
+      echo '<script>alert("Selamat Datang ' . $data['nama']. ', Anda akan dialihkan ke Halaman Utama");
           location.href="index.php"</script>';
     } else {
 
       echo '<script>alert("Username/Password tidak sesuai.");</script>';
     }
   }
-  ?> -->
-  <!-- ================ PHP SCRIPT ================ -->
+  ?>
 
   <section class="content">
+    <h2>LOGIN PAGE</h2>
+    <form method="post">
+      <label for="username" class="form-label">Username :</label>
+      <input type="text" name="username" required class="form-control">
+      <label for="password" class="form-label">Password :</label>
+      <input type="password" name="password" required class="form-control">
+      <div class="button">
+        <button type="submit" class="btn login btn-success">Login</button>
+        <a href="register.php" class="register">Registrasi</a>
+      </div>
+    </form>
+  </section>
+
+  <!-- <div class="content">
+    <h2>LOGIN PAGE</h2>
+    <form action="#" method="post">
+      <table align="center">
+        <tr>
+          <td colspan="2" align="center"></td>
+        </tr>
+        <tr>
+          <td>Username</td>
+          <td><input type="text" nama="username" /></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" nama="Password" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button type="submit">Login</button>
+            <a href="register.php" class="register">Registrasi</a>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div> -->
+
+  <!-- <section class="content">
     <h2>LOGIN PAGE</h2>
     <form method="post" class="area">
       <div class="body-form">
         <label class="form-label">Username :</label>
-        <input type="text" name="username" class="form-control">
+        <input type="text" name="username" required class="form-control">
       </div>
       <div class="body-form">
         <label class="form-label">Password :</label>
-        <input type="password" name="password" class="form-control">
+        <input type="password" name="password" required class="form-control">
       </div>
       <div class="button">
         <button type="submit" class="btn login btn-success">Login</button>
         <a href="register.php" class="reg">Registrasi</a>
       </div>
     </form>
-  </section>
+  </section> -->
 
   <?php include "layout/footer.html" ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

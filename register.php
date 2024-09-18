@@ -24,12 +24,12 @@ include "koneksi.php";
     $nama = $_POST['nama'];
     $username = $_POST['username'];
     $email = $_POST['email'];
-    $password = md5($_POST['password']);
-    
-    $query = mysqli_query($koneksi, "INSERT INTO user(nama,username,email,password) values('$nama','$username','$email','$password')");
+    $password = md5(string: $_POST['password']);
+
+    $query = mysqli_query(mysql: $koneksi, query: "INSERT INTO user(nama,username,email,password) values('$nama','$username','$email','$password')");
     if ($query) {
       echo '<script>alert("Registrasi Berhasil. Silahkan Login")</script>';
-      header("location:index.php");
+      header(header: "location:index.php");
     } else {
       echo '<script>alert("Maaf Pendaftaran Gagal.")</script>';
 
@@ -37,14 +37,34 @@ include "koneksi.php";
   }
   ?>
   <!-- ============PHP SCRIPT============== -->
-   <!-- ========== HTML START ============= -->
-   <section class="content">
+  <section class="content">
+    <h2>SIGN UP PAGE</h2>
+    <form method="post">
+      <label for="nama" class="form-label">Nama :</label>
+      <input type="text" name="nama" required class="form-control">
+      <label for="username" class="form-label">Username :</label>
+      <input type="text" name="username" required class="form-control">
+      <label for="email" class="form-label">email :</label>
+      <input type="text" name="email" required class="form-control">
+      <label for="password" class="form-label">Password :</label>
+      <input type="password" name="password" required class="form-control">
+      <div class="button">
+        <button type="submit" class="btn login btn-success">Sign Up</button>
+        <i>Punya Akun? </i><a href="login.php" class="i">Login</a>
+      </div>
+    </form>
+  </section>
+
+
+
+  <!-- ========== HTML START ============= -->
+  <!-- <section class="content">
     <h2>SIGN UP PAGE</h2>
     <form action="#" method="post" class="area">
       <div>
         <div class="body-form">
-          <label for="nama" type="text" class="form-label">Nama :</label>
-          <input type="text" name="nama" id="nama" required minlength="5" class="form-control">
+          <label for="d" type="text" class="form-label">Nama :</label>
+          <input type="text" name="d" id="d" required minlength="5" class="form-control">
         </div>
         <div class="body-form">
           <label for="username" type="text" class="form-label">Username :</label>
@@ -64,7 +84,7 @@ include "koneksi.php";
         </div>
       </div>
     </form>
-  </section>
+  </section> -->
 
   <?php include "layout/footer.html" ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
