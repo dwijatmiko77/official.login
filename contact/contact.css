@@ -626,6 +626,7 @@ button.btn {
 }
 
 .footer p {
+  font-style     : italic;
   position       : relative;
   display        : inline-flexbox;
   justify-content: center;

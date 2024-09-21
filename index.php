@@ -101,12 +101,11 @@ if (!isset($_SESSION['user'])) {
           href="https://forms.gle/3CFcoFK58krQhJD29">👉 Link Pendaftaran 👈 </a>
         </button>
         <br> -->
-        </h5>
-        <br>
-        <h5 class="span animate__animated animate__backInUp">Story</h5>
-        <video controls loop autoplay>
-          <source src="asset/Maulid Nabi Instagram Story.mp4" type="video/mp4">
-        </video>
+        <!-- <br>
+        // <h5 class="span animate__animated animate__backInUp">Story</h5>
+        // <video controls loop autoplay>
+        //   <source src="asset/Maulid Nabi Instagram Story.mp4" type="video/mp4">
+        // </video>
         <!-- <div class="animate__animated animate__backInDown">
         <img class="feed" src="asset/Announcement - Peserta Lolos Seleksi Dewan Perwakilan Mahasiswa.png" alt="img">
       </div> -->
@@ -126,10 +125,10 @@ if (!isset($_SESSION['user'])) {
         <source src="asset/Brosur Oprec Dewan Perwakilan Mahasiswa 2024.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video> -->
-        <h5 class="span animate__animated animate__backInUp">STRUKTUR ORGANISASI</h5>
+        <h5 class="span animate__animated animate__backInUp">Struktur Organisasi</h5>
         <br>
         <div class="animate__animated animate__backInDown">
-          <img class="struktur" src="asset/Feed Dewan Perwakilan Mahasiswa forweb.png" alt="img">
+          <img class="struktur" src="asset/truktur organisasi.png" alt="img">
         </div>
         <!-- Struktur Organisasi -->
         <hr>

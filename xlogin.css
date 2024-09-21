@@ -16,7 +16,7 @@
 } */
 
 body {
-	background-image   : url(../data_pengunjung/media/uwhs.jpg);
+	background-image   : url(media/uwhs.jpg);
 	background-size    : 200%;
 	background-position: center;
 	background-color   : rgba(0, 0, 0, 0.908);
@@ -26,39 +26,46 @@ h2 {
 	font-family    : 'boogaloo', sans-serif;
 	display        : flex;
 	justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
 	font-weight    : 900;
-	padding-bottom : 2rem;
 	letter-spacing : 2px;
+	background-color: rgba(0, 0, 0, 0.838);
+    color: #ffff;
 }
 
 section.content {
+    display         : flex;
+    justify-content : center;
 	background-color: rgba(0, 0, 0, 0.838);
-	display         : flexbox;
-	justify-content : center;
-	align-content   : center;
-	max-height      : max-content;
-	height          : 40rem;
 	position        : relative;
+    top             : -7px;
+    height: 40rem;
 }
 
-form {
-	display        : grid;
-	justify-content: center;
-	justify-self   : center;
+form{
+    width: 30%;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    form {
+        width: 90%;
+    }
 }
 
 .form-label {
-	display        : grid;
-	justify-content: start;
-	align-items    : end;
-	position       : relative;
-	bottom         : -5px;
+    position       : relative;
+	bottom         : -8px;
 }
 
 .form-control {
 	font-family    : sans-serif;
-	display        : flexbox;
-	justify-content: center;
 	margin-bottom  : 5px;
 }
 
@@ -74,7 +81,7 @@ form {
 }
 
 .sign-up {
-	margin-top: 1rem;
+	margin-top   : 1rem;
 }
 
 .login {
@@ -82,13 +89,12 @@ form {
 }
 
 .register {
-	position             : relative;
-	top                  : 12px;
-	margin-top           : 11px;
+	margin-top           : 1rem;
 	margin-left          : 1rem;
 	color                : rgb(0, 197, 241);
 	text-decoration      : underline;
 	text-underline-offset: 7px;
+
 }
 
 .register:hover {
@@ -96,16 +102,17 @@ form {
 }
 
 i {
-	margin-top  : 1.3rem;
-	padding-left: 6px;
+	margin-top  : 1rem;
+	padding-left: 4px;
 	position    : relative;
 	right       : -9px;
 }
 
 .i {
+    position             : relative;
 	color                : rgb(0, 197, 241);
-	margin-top           : 1.3rem;
-	margin-left          : 1rem;
+	margin-top           : 1rem;
+	margin-left          : 1.2rem;
 	text-decoration      : underline;
 	text-underline-offset: 7px;
 }
@@ -125,7 +132,8 @@ i {
 	align-items     : center;
 	justify-content : center;
 	position        : relative;
-	bottom          : 0;
+    top:-10px;
+    bottom: 10px;
 }
 
 .footer p {

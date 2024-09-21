@@ -44,64 +44,19 @@ include "koneksi.php";
     }
   }
   ?>
-
-  <section class="content">
     <h2>LOGIN PAGE</h2>
-    <form method="post">
-      <label for="username" class="form-label">Username :</label>
-      <input type="text" name="username" required class="form-control">
-      <label for="password" class="form-label">Password :</label>
-      <input type="password" name="password" required class="form-control">
-      <div class="button">
-        <button type="submit" class="btn login btn-success">Login</button>
-        <a href="register.php" class="register">Registrasi</a>
-      </div>
-    </form>
-  </section>
-
-  <!-- <div class="content">
-    <h2>LOGIN PAGE</h2>
-    <form action="#" method="post">
-      <table align="center">
-        <tr>
-          <td colspan="2" align="center"></td>
-        </tr>
-        <tr>
-          <td>Username</td>
-          <td><input type="text" nama="username" /></td>
-        </tr>
-        <tr>
-          <td>Password</td>
-          <td><input type="password" nama="Password" /></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>
-            <button type="submit">Login</button>
-            <a href="register.php" class="register">Registrasi</a>
-          </td>
-        </tr>
-      </table>
-    </form>
-  </div> -->
-
-  <!-- <section class="content">
-    <h2>LOGIN PAGE</h2>
-    <form method="post" class="area">
-      <div class="body-form">
-        <label class="form-label">Username :</label>
+    <section class="content">
+      <form method="post" class="form">
+        <label for="username" class="form-label">Username :</label>
         <input type="text" name="username" required class="form-control">
-      </div>
-      <div class="body-form">
-        <label class="form-label">Password :</label>
+        <label for="password" class="form-label">Password :</label>
         <input type="password" name="password" required class="form-control">
-      </div>
-      <div class="button">
-        <button type="submit" class="btn login btn-success">Login</button>
-        <a href="register.php" class="reg">Registrasi</a>
-      </div>
-    </form>
-  </section> -->
+        <div class="button">
+          <button type="submit" class="btn login btn-success">Login</button>
+          <a href="register.php" class="register">Registrasi</a>
+        </div>
+      </form>
+    </section>
 
   <?php include "layout/footer.html" ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

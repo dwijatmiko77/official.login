@@ -368,32 +368,7 @@ p.misi {
   }
 }
 
-/* --------------------------------------------------- */
-/* FOOTER */
-/* button {
-  text-decoration   : none;
-  font-style        : italic;
-  border-radius     : 7px;
-}
-
-button:hover {
-  color              : #ffffff;
-  background-color   : #009daf;
-  border-radius      : 7px;
-}
-
-button a {
-  color          : #000000;
-  text-decoration: none;
-  font-family    : 'boogaloo', sans-serif;
-  letter-spacing : 2px;
-  padding        : 3px;
-}
-
-button a:hover {
-  color  : #ffff;
-  padding: 3px;
-} */
+/* ========================================= */
 
 .footer {
   background-color: #000000eb;
@@ -408,6 +383,7 @@ button a:hover {
 }
 
 .footer p {
+  font-style      : italic;
   position       : relative;
   display        : inline-flexbox;
   justify-content: center;
@@ -440,35 +416,4 @@ h4 {
   color      : #ffffff;
   font-weight: 500;
   position   : relative;
-}
-
-/*  */
-
-.social-links-me {
-  width: 100%;
-}
-
-.social-links-me i {
-  display      : inline-block;
-  font-size    : 20px;
-  height       : 40px;
-  width        : 40px;
-  margin       : 10px;
-  text-align   : center;
-  line-height  : 40px;
-  border-radius: 25%;
-  color        : #00e5ff;
-  transition   : all 0.5s ease;
-}
-
-.social-links-me i:hover {
-  color           : #000000;
-  background-color: #9b9a9a;
-}
-
-i.fa-brands:hover {
-  transform       : translateY(-10px);
-  transition      : 500ms;
-  color           : #000000;
-  background-color: #dbdbdb;
 }

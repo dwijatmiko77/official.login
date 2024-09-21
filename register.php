@@ -37,8 +37,8 @@ include "koneksi.php";
   }
   ?>
   <!-- ============PHP SCRIPT============== -->
+  <h2>SIGN UP PAGE</h2>
   <section class="content">
-    <h2>SIGN UP PAGE</h2>
     <form method="post">
       <label for="nama" class="form-label">Nama :</label>
       <input type="text" name="nama" required class="form-control">
