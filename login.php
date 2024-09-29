@@ -22,6 +22,9 @@ include "koneksi.php";
     href="https://fonts.googleapis.com/css2?family=Acme&family=Lemon&family=Moo+Lah+Lah&family=Salsa&family=Satisfy&display=swap"
     rel="stylesheet" />
 
+  <!-- ANIMASI -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -36,7 +39,7 @@ include "koneksi.php";
     if (mysqli_num_rows(result: $query) > 0) {
       $data = mysqli_fetch_array(result: $query);
       $_SESSION['user'] = $data;
-      echo '<script>alert("Selamat Datang ' . $data['nama']. ', Anda akan dialihkan ke Halaman Utama");
+      echo '<script>alert("Selamat Datang ' . $data['nama'] . ', Anda akan dialihkan ke Halaman Utama");
           location.href="index.php"</script>';
     } else {
 
@@ -44,19 +47,21 @@ include "koneksi.php";
     }
   }
   ?>
-    <h2>LOGIN PAGE</h2>
-    <section class="content">
+  <main>
+    <h2 class="animate__animated animate__fadeInDown ">LOGIN PAGE</h2>
+    <section class="content animate__animated animate__fadeInUp">
       <form method="post" class="form">
         <label for="username" class="form-label">Username :</label>
         <input type="text" name="username" required class="form-control">
         <label for="password" class="form-label">Password :</label>
         <input type="password" name="password" required class="form-control">
         <div class="button">
-          <button type="submit" class="btn login btn-success">Login</button>
-          <a href="register.php" class="register">Registrasi</a>
+          <button type="submit" class="btn login btn-success animate__animated animate__fadeInRight">Login</button>
+          <a href="register.php" class="register animate__animated animate__fadeInLeft">Registrasi</a>
         </div>
       </form>
     </section>
+  </main>
 
   <?php include "layout/footer.html" ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

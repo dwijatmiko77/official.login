@@ -9,43 +9,41 @@
 	font-size     : 1.1rem;
 }
 
-/* @media screen and (min-width: 765px) {
-	body {
-		background-size: 150px;
-	}
-} */
-
 body {
-	background-image   : url(media/uwhs.jpg);
+	background-image   : url(media/bg.jpg);
 	background-size    : 200%;
 	background-position: center;
-	background-color   : rgba(0, 0, 0, 0.908);
+	background-color   : rgb(0, 0, 0);
 }
 
 h2 {
-	font-family     : 'boogaloo', sans-serif;
-	display         : flex;
-	justify-content : center;
-	padding-top     : 5rem;
-	padding-bottom  : 2rem;
-	font-weight     : 900;
-	letter-spacing  : 2px;
-	background-color: rgba(0, 0, 0, 0.838);
-	color           : #ffff;
+	font-family    : 'boogaloo', sans-serif;
+	display        : flex;
+	justify-content: center;
+	padding-top    : 5rem;
+	padding-bottom : 2rem;
+	font-weight    : 900;
+	letter-spacing : 2px;
+	color          : #ffffff;
 }
 
 main {
-	background-color: antiquewhite;
-
+	background-color  : rgba(0, 0, 0, 0.582);
+	z-index           : 1;
+	position          : relative;
+	inset             : 0 0 0 0;
+	display           : grid;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	justify-content   : center;
+	align-items       : center;
 }
 
 section.content {
-	display         : flex;
-	justify-content : center;
-	background-color: rgba(0, 0, 0, 0.838);
-	position        : relative;
-	top             : -7px;
-	height          : 40rem;
+	display        : flex;
+	justify-content: center;
+	position       : relative;
+	top            : -7px;
+	height         : 40rem;
 }
 
 form {
@@ -137,8 +135,6 @@ i {
 	align-items     : center;
 	justify-content : center;
 	position        : relative;
-	top             : -10px;
-	bottom          : 10px;
 }
 
 .footer p {
@@ -146,7 +142,7 @@ i {
 	display        : inline-flexbox;
 	justify-content: center;
 	align-items    : center;
-	font-size      : 13px;
+	font-size      : 12px;
 	color          : #545454;
 	font-family    : sans-serif;
 }
