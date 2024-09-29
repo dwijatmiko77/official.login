@@ -23,50 +23,55 @@ body {
 }
 
 h2 {
-	font-family    : 'boogaloo', sans-serif;
-	display        : flex;
-	justify-content: center;
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-	font-weight    : 900;
-	letter-spacing : 2px;
+	font-family     : 'boogaloo', sans-serif;
+	display         : flex;
+	justify-content : center;
+	padding-top     : 5rem;
+	padding-bottom  : 2rem;
+	font-weight     : 900;
+	letter-spacing  : 2px;
 	background-color: rgba(0, 0, 0, 0.838);
-    color: #ffff;
+	color           : #ffff;
+}
+
+main {
+	background-color: antiquewhite;
+
 }
 
 section.content {
-    display         : flex;
-    justify-content : center;
+	display         : flex;
+	justify-content : center;
 	background-color: rgba(0, 0, 0, 0.838);
 	position        : relative;
-    top             : -7px;
-    height: 40rem;
+	top             : -7px;
+	height          : 40rem;
 }
 
-form{
-    width: 30%;
+form {
+	width: 30%;
 }
 
 @media (max-width: 600px) {
-    form {
-        width: 80%;
-    }
+	form {
+		width: 80%;
+	}
 }
 
 @media screen and (max-width: 375px) {
-    form {
-        width: 90%;
-    }
+	form {
+		width: 90%;
+	}
 }
 
 .form-label {
-    position       : relative;
-	bottom         : -8px;
+	position: relative;
+	bottom  : -8px;
 }
 
 .form-control {
-	font-family    : sans-serif;
-	margin-bottom  : 5px;
+	font-family  : sans-serif;
+	margin-bottom: 5px;
 }
 
 .button {
@@ -81,7 +86,7 @@ form{
 }
 
 .sign-up {
-	margin-top   : 1rem;
+	margin-top: 1rem;
 }
 
 .login {
@@ -109,7 +114,7 @@ i {
 }
 
 .i {
-    position             : relative;
+	position             : relative;
 	color                : rgb(0, 197, 241);
 	margin-top           : 1rem;
 	margin-left          : 1.2rem;
@@ -118,7 +123,7 @@ i {
 }
 
 .i:hover {
-	color :rgb(255, 255, 255)
+	color: rgb(255, 255, 255)
 }
 
 /* ===========FOOTER============= */
@@ -132,8 +137,8 @@ i {
 	align-items     : center;
 	justify-content : center;
 	position        : relative;
-    top:-10px;
-    bottom: 10px;
+	top             : -10px;
+	bottom          : 10px;
 }
 
 .footer p {

@@ -13,34 +13,33 @@ if (!isset($_SESSION['user'])) {
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Page Dewan Perwakilan Mahasiswa</title>
-  <link rel="icon" href="asset/logo DPM.png" />
-  <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+<hphp <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home Page Dewan Perwakilan Mahasiswa</title>
+<link rel="icon" href="asset/logo DPM.png" />
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-  <!-- ANIMASI -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<!-- ANIMASI -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <!-- Style CSS -->
-  <link rel="stylesheet" href="style.css" />
+<!-- Style CSS -->
+<link rel="stylesheet" href="style.css" />
 
-  <!-- ICON -->
-  <script src="https://kit.fontawesome.com/863fb503f2.js" crossorigin="anonymous"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<!-- ICON -->
+<script src="https://kit.fontawesome.com/863fb503f2.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 
-  <!-- Font Google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Acme&family=Lemon&family=Moo+Lah+Lah&family=Salsa&family=Satisfy&display=swap"
-    rel="stylesheet" />
+<!-- Font Google -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Acme&family=Lemon&family=Moo+Lah+Lah&family=Salsa&family=Satisfy&display=swap"
+  rel="stylesheet" />
 
-  <!-- icon -->
-  <script src="https://unpkg.com/feather-icons"></script>
+<!-- icon -->
+<script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
@@ -66,8 +65,9 @@ if (!isset($_SESSION['user'])) {
     </div>
   </nav>
   <!-- nav end -->
-   <!-- CONTEN -------------------------------------------------------------->
-   <div class="background">
+
+  <!-- CONTEN -------------------------------------------------------------->
+  <div class="background">
     <center>
       <div class="section">
         <h1 class="animate__animated animate__fadeInUp">
@@ -101,11 +101,12 @@ if (!isset($_SESSION['user'])) {
           href="https://forms.gle/3CFcoFK58krQhJD29">👉 Link Pendaftaran 👈 </a>
         </button>
         <br> -->
-        <!-- <br>
-        // <h5 class="span animate__animated animate__backInUp">Story</h5>
-        // <video controls loop autoplay>
-        //   <source src="asset/Maulid Nabi Instagram Story.mp4" type="video/mp4">
-        // </video>
+        </h5>
+        <br>
+        <h5 class="span animate__animated animate__backInUp">Activity</h5><br>
+        <video controls loop autoplay>
+          <source src="asset/Debat.mp4" type="video/mp4">
+        </video>
         <!-- <div class="animate__animated animate__backInDown">
         <img class="feed" src="asset/Announcement - Peserta Lolos Seleksi Dewan Perwakilan Mahasiswa.png" alt="img">
       </div> -->
@@ -116,8 +117,9 @@ if (!isset($_SESSION['user'])) {
         <!-- <div class="feed-1 animate__animated animate__backInDown">
         <img src="asset/3 FEED OPEN NEW GEN 2024 .png" alt="img">
       </div> -->
-        <div class="animate__animated animate__backInDown">
-          <img class="struktur" src="asset/Pelatihan LPJ.PNG" alt="img">
+        <div class="proker animate__animated animate__backInDown">
+          <img class="struktur-1" src="asset/FEED PEMIRA.png" alt="img">
+          <img class="struktur" src="asset/TIMELINE.png" alt="img">
         </div>
         <hr>
         <!-- <span class="line animate__animated animate__backInUp"></span>
@@ -125,10 +127,10 @@ if (!isset($_SESSION['user'])) {
         <source src="asset/Brosur Oprec Dewan Perwakilan Mahasiswa 2024.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video> -->
-        <h5 class="span animate__animated animate__backInUp">Struktur Organisasi</h5>
+        <h5 class="span animate__animated animate__backInUp">STRUKTUR ORGANISASI</h5>
         <br>
         <div class="animate__animated animate__backInDown">
-          <img class="struktur" src="asset/truktur organisasi.png" alt="img">
+          <img class="struktur" src="asset/Feed Dewan Perwakilan Mahasiswa forweb.png" alt="img">
         </div>
         <!-- Struktur Organisasi -->
         <hr>
@@ -314,11 +316,6 @@ if (!isset($_SESSION['user'])) {
       </div>
     </div>
   </div>
-  <!-- Messege Form -->
-  <!-- footer -->
-  <!-- -------------------------------------------------------------------------------------- -->
-
-
   <!-- Messege Form -->
   <!-- footer -->
   <!-- -------------------------------------------------------------------------------------- -->

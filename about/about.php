@@ -1,10 +1,13 @@
 <?php
+// Inisisalisai SESSION
 session_start();
 
+// Pengecekan apakah ada user yang login, jika Tidak arahkan ke login.php
 if (!isset($_SESSION['user'])) {
-  header('location:login.php');
+  header(header: 'location:login.php');
 }
 ?>
+
 
 
 <!DOCTYPE html>
@@ -66,14 +69,12 @@ if (!isset($_SESSION['user'])) {
   <!-- CONTEN -->
   <div class="background">
     <div class="section">
-      <center>
-        <h1 class="animate__animated animate__fadeInDown" style="padding-top: 50px">
-          <span>WELCOME TO ABOUT PAGE OF</span> <br />
-          DEWAN PERWAKILAN MAHASISWA <br />
-          <span>UNIVERSITAS WIDYA HUSADA SEMARANG</span>
-        </h1>
-        <h5 class="animate__animated animate__fadeInUp">Tak kenal maka kenalan dulu yuk dengan kami.</h5>
-      </center>
+      <h1 class="animate__animated animate__fadeInDown" style="padding-top: 50px">
+        <span>WELCOME TO ABOUT PAGE OF</span> <br />
+        DEWAN PERWAKILAN MAHASISWA <br />
+        <span>UNIVERSITAS WIDYA HUSADA SEMARANG</span>
+      </h1>
+      <h5 class="animate__animated animate__fadeInUp">Tak kenal maka kenalan dulu yuk dengan kami.</h5>
     </div>
     <div class="container-group animate__animated animate__fadeInUp">
       <img src="../asset/ppt1.png" alt="img" width="100%" />

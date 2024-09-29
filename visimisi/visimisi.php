@@ -1,11 +1,12 @@
 <?php
+// Inisisalisai SESSION
 session_start();
 
+// Pengecekan apakah ada user yang login, jika Tidak arahkan ke login.php
 if (!isset($_SESSION['user'])) {
-  header('location:login.php');
+  header(header: 'location:login.php');
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -64,7 +65,7 @@ if (!isset($_SESSION['user'])) {
   </nav>
   <!-- nav end -->
   <!-- CONTEN -->
-  <center class="section">
+  <main>
     <h1 class="animate__animated animate__fadeInUp">
       <span>VISI & MISI</span> <br />
       DEWAN PERWAKILAN MAHASISWA <br />
@@ -86,15 +87,15 @@ if (!isset($_SESSION['user'])) {
     </p>
     <br />
     <h4 class="animate__animated animate__fadeInDown">MISI :</h4>
-    <p class="misi animate__animated animate__fadeInDown">
-      Mengoptimalkan peran DPM sebagai perantara dalam menyampaikan aspirasi
-      Mahasiswa. <br>
-      Memaksimalkan kualitas pelayanan dalam controlling, budgeting,
-      dan legislating tingkat fakultas. <br>
-      Menjalin kerja sama, hubungan yang
-      harmonis, antar sesama Ormawa.
-    </p>
-  </center>
+    <ol class="misi animate__animated animate__fadeInDown">
+      <li>Mengoptimalkan peran DPM sebagai perantara dalam menyampaikan aspirasi
+        Mahasiswa.</li>
+      <li>Memaksimalkan kualitas pelayanan dalam controlling, budgeting,
+        dan legislating tingkat fakultas.</li>
+      <li>Menjalin kerja sama, hubungan yang
+        harmonis, antar sesama Ormawa.</li>
+    </ol>
+  </main>
   <!-- CONTEN END -->
   <!-- footer -->
   <!-- -------------------------------------------------------------------------------------- -->

@@ -1,10 +1,13 @@
 <?php
+// Inisisalisai SESSION
 session_start();
 
+// Pengecekan apakah ada user yang login, jika Tidak arahkan ke login.php
 if (!isset($_SESSION['user'])) {
-  header('location:login.php');
+  header(header: 'location:login.php');
 }
 ?>
+
 
 
 <!DOCTYPE html>
