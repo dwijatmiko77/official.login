@@ -3,7 +3,7 @@
 * {
 	padding       : 0;
 	margin        : 0;
-	color         : rgb(255, 255, 255);
+	color         : rgb(0, 0, 0);
 	font-family   : 'boogaloo', sans-serif;
 	letter-spacing: 1px;
 	font-size     : 1.1rem;
@@ -14,28 +14,32 @@ body {
 	background-size    : 200%;
 	background-position: center;
 	background-color   : rgb(0, 0, 0);
-}
-
-h2 {
-	font-family    : 'boogaloo', sans-serif;
-	display        : flex;
-	justify-content: center;
-	padding-top    : 5rem;
-	padding-bottom : 2rem;
-	font-weight    : 900;
-	letter-spacing : 2px;
-	color          : #ffffff;
+    overflow-x: hidden;
 }
 
 main {
-	background-color  : rgba(0, 0, 0, 0.582);
-	z-index           : 1;
-	position          : relative;
-	inset             : 0 0 0 0;
-	display           : grid;
+    overflow-x: hidden;
+	background-color     : rgba(0, 0, 0, 0.582);
+	z-index              : 1;
+	position             : relative;
+	inset                : 0 0 0 0;
+	display              : grid;
 	grid-template-columns: repeat(1, minmax(0, 1fr));
-	justify-content   : center;
-	align-items       : center;
+	justify-content      : center;
+	align-items          : start;
+	height               : 45rem;
+}
+
+h2.header {
+	font-family    : 'boogaloo', sans-serif;
+	display        : flex;
+	padding-top    : 1rem;
+	padding-bottom : 1rem;
+	justify-content: center;
+	font-weight    : 900;
+	letter-spacing : 2px;
+	color          : #000000;
+	text-shadow    : 0 0 15px #000000;
 }
 
 section.content {
@@ -43,23 +47,41 @@ section.content {
 	justify-content: center;
 	position       : relative;
 	top            : -7px;
-	height         : 40rem;
 }
 
-form {
-	width: 30%;
+.card {
+	position            : relative;
+	display             : flex;
+	justify-content     : center;
+	justify-self        : center;
+	justify-items       : center;
+    margin-top          : 3rem;
+    border-radius       : 20px;
+	box-shadow          : 0 0 50px #00ddff;
 }
 
-@media (max-width: 600px) {
-	form {
-		width: 80%;
-	}
+.card-body {
+	box-shadow     : 0 0 50px #00ddff;
+    border-radius  : 20px;
+    width          : 20rem;
 }
 
-@media screen and (max-width: 375px) {
-	form {
-		width: 90%;
-	}
+
+@media screen and (min-width: 475px) {
+    .card-body {
+	    box-shadow     : 0 0 50px #00ddff;
+        width          : 30rem;
+        border-radius  : 20px;
+    }
+
+    .form-control {
+	    font-family     : sans-serif;
+        justify-content : center;
+	    justify-self    : center;
+	    justify-items   : center;
+        margin-bottom   : 2px;
+        /* box-shadow      : 0 0 30px #000000; */
+    }
 }
 
 .form-label {
@@ -68,11 +90,17 @@ form {
 }
 
 .form-control {
+    width: 16rem;
 	font-family  : sans-serif;
-	margin-bottom: 5px;
+    justify-content : center;
+	justify-self    : center;
+	justify-items   : center;
+    margin-bottom   : 2px;
+    /* box-shadow      : 0 0 30px #000000; */
 }
 
 .button {
+	margin-top     : 2rem;
 	display        : flex;
 	justify-content: start;
 	color          : rgb(255, 255, 255);
@@ -81,6 +109,7 @@ form {
 .btn {
 	position: relative;
 	top     : -10px;
+    box-shadow: 0 0 15px #2fc800;
 }
 
 .sign-up {
@@ -95,13 +124,15 @@ form {
 	margin-top           : 1rem;
 	margin-left          : 1rem;
 	color                : rgb(0, 197, 241);
+    text-shadow     : 0 0 5px #00ddff;   
 	text-decoration      : underline;
 	text-underline-offset: 7px;
 
 }
 
 .register:hover {
-	color: rgb(255, 255, 255);
+	color: rgba(198, 165, 0, 0.957);
+    text-shadow     : 0 0 5px rgba(198, 165, 0, 0.957);
 }
 
 i {
@@ -114,6 +145,7 @@ i {
 .i {
 	position             : relative;
 	color                : rgb(0, 197, 241);
+    text-shadow     : 0 0 5px #00ddff;
 	margin-top           : 1rem;
 	margin-left          : 1.2rem;
 	text-decoration      : underline;
@@ -121,7 +153,8 @@ i {
 }
 
 .i:hover {
-	color: rgb(255, 255, 255)
+	color: rgba(198, 165, 0, 0.957);
+    text-shadow     : 0 0 5px rgba(198, 165, 0, 0.957);
 }
 
 /* ===========FOOTER============= */
@@ -135,6 +168,7 @@ i {
 	align-items     : center;
 	justify-content : center;
 	position        : relative;
+    bottom          : 2px;
 }
 
 .footer p {

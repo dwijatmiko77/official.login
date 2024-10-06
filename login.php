@@ -10,7 +10,7 @@ include "koneksi.php";
   <meta charset="utf-8">
   <title>Login</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../data_pengunjung/media/logo DPM.png">
+  <link rel="icon" href="asset/logo DPM.png">
   <!--  -->
   <link rel="stylesheet" href="xlogin.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,8 +21,7 @@ include "koneksi.php";
   <link
     href="https://fonts.googleapis.com/css2?family=Acme&family=Lemon&family=Moo+Lah+Lah&family=Salsa&family=Satisfy&display=swap"
     rel="stylesheet" />
-
-  <!-- ANIMASI -->
+    <!-- ANIMASI -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
@@ -39,7 +38,7 @@ include "koneksi.php";
     if (mysqli_num_rows(result: $query) > 0) {
       $data = mysqli_fetch_array(result: $query);
       $_SESSION['user'] = $data;
-      echo '<script>alert("Selamat Datang ' . $data['nama'] . ', Anda akan dialihkan ke Halaman Utama");
+      echo '<script>alert("Hallo...Selamat Datang ' . $data['nama']. ', Anda akan dialihkan ke Halaman Utama Dewan Perwakilan Mahasiswa UWHS..😍");
           location.href="index.php"</script>';
     } else {
 
@@ -47,21 +46,25 @@ include "koneksi.php";
     }
   }
   ?>
-  <main>
-    <h2 class="animate__animated animate__fadeInDown ">LOGIN PAGE</h2>
-    <section class="content animate__animated animate__fadeInUp">
-      <form method="post" class="form">
-        <label for="username" class="form-label">Username :</label>
-        <input type="text" name="username" required class="form-control">
-        <label for="password" class="form-label">Password :</label>
-        <input type="password" name="password" required class="form-control">
-        <div class="button">
-          <button type="submit" class="btn login btn-success animate__animated animate__fadeInRight">Login</button>
-          <a href="register.php" class="register animate__animated animate__fadeInLeft">Registrasi</a>
+    <main>
+        <div class="card mb-2 animate__animated animate__fadeInDown">
+          <div class="card-body animate__animated animate__fadeInDown">
+              <h2 class="header animate__animated animate__fadeInDown ">LOGIN PAGE</h2>
+                <section class="content animate__animated animate__fadeInUp">
+                    <form method="post" class="form">
+                    <label for="username" class="form-label">Username :</label>
+                    <input type="text" name="username" required class="form-control">
+                    <label for="password" class="form-label">Password :</label>
+                    <input type="password" name="password" required class="form-control">
+                    <div class="button">
+                      <button type="submit" class="btn login btn-success animate__animated animate__fadeInRight">Login</button>
+                      <a href="register.php" class="register animate__animated animate__fadeInLeft">Registrasi</a>
+                    </div>
+                </form>
+              </section>
+            </div>
         </div>
-      </form>
-    </section>
-  </main>
+    </main>
 
   <?php include "layout/footer.html" ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
